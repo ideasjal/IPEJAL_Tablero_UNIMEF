@@ -3,13 +3,13 @@
   "name": "IPEJAL Tablero",
   "icons": [
     {
-      "src": "./logo-ipejal_st.png?",
+      "src": "./logo-ipejal_st.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./logo-ipejal_st.png?",
+      "src": "./logo-ipejal_st.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
