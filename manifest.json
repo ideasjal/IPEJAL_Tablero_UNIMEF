@@ -1,0 +1,16 @@
+{
+  "short_name": "IPEJAL Tablero",
+  "name": "IPEJAL - Tablero de Control",
+  "icons": [
+    {
+      "src": "logo_ipejal.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#EEF2F3",
+  "theme_color": "#7357C1",
+  "display": "standalone",
+  "orientation": "any"
+}
