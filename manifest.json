@@ -1,16 +1,17 @@
 {
-  "short_name": "IPEJAL Tablero",
-  "name": "IPEJAL - Tablero de Control",
+  "short_name": "IPEJAL",
+  "name": "IPEJAL - Tablero de Indicadores",
   "icons": [
     {
-      "src": "logo_ipejal.png",
+      "src": "./logo-ipejal_st.png",
+      "sizes": "192x192 512x512",
       "type": "image/png",
-      "sizes": "192x192 512x512"
+      "purpose": "any maskable"
     }
   ],
   "start_url": "./index.html",
-  "background_color": "#EEF2F3",
-  "theme_color": "#7357C1",
+  "background_color": "#ffffff",
+  "theme_color": "#5b3a9c",
   "display": "standalone",
   "orientation": "any"
 }
