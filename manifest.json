@@ -1,17 +1,22 @@
 {
   "short_name": "IPEJAL",
-  "name": "IPEJAL - Tablero",
+  "name": "IPEJAL Tablero",
   "icons": [
     {
-      "src": "./logo-ipejal_st.png",
-      "sizes": "192x192 512x512",
+      "src": "./logo-ipejal_st.png?",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./logo-ipejal_st.png?",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
   "start_url": "./index.html",
   "background_color": "#ffffff",
-  "theme_color": "#5b3a9c",
-  "display": "standalone",
-  "orientation": "any"
+  "theme_color": "#ffffff",
+  "display": "standalone"
 }
