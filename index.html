@@ -3,88 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPEJAL - Tablero de Indicadores</title>
+  <title>IPEJAL_Tablero</title>
   
-  <!-- Vinculación del PWA Manifest -->
-  <link rel="manifest" href="./manifest.json">
-  
-  <!-- Íconos para navegador, acceso directo e iOS -->
+  <!-- Ícono para la pestaña del navegador (favicon) -->
   <link rel="icon" type="image/png" href="./logo-ipejal_st.png">
+  <link rel="shortcut icon" type="image/png" href="./logo-ipejal_st.png">
   <link rel="apple-touch-icon" href="./logo-ipejal_st.png">
   
+  <!-- Manifest para PWA -->
+  <link rel="manifest" href="./manifest.json">
+  
   <style>
-    * {
-      box-sizing: border-box;
+    html, body {
       margin: 0;
       padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header img {
-      height: 48px;
-      width: auto;
-      object-fit: contain;
-    }
-    header h1 {
-      font-size: 1.25rem;
-      color: #5b3a9c;
-    }
-    main {
-      flex: 1;
       width: 100%;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-    }
-    .iframe-container {
-      width: 100%;
-      max-width: 1200px;
-      height: 80vh;
-      border: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      border-radius: 8px;
+      height: 100%;
       overflow: hidden;
       background-color: #ffffff;
     }
     iframe {
       width: 100%;
-      height: 100%;
+      height: 100vh;
       border: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- Encabezado con el Logo -->
-  <header>
-    <img src="./logo-ipejal_st.png" alt="Logo IPEJAL">
-    <h1>Indicadores de Atención</h1>
-  </header>
-
-  <!-- Contenedor del informe Power BI -->
-  <main>
-    <div class="iframe-container">
-      <iframe 
-        title="IPEJAL_Tablero" 
-        src="https://app.powerbi.com/view?r=eyJrIjoiNzI3..." 
-        allowFullScreen="true">
-      </iframe>
-    </div>
-  </main>
+  <iframe 
+    title="IPEJAL_Tablero" 
+    src="https://app.powerbi.com/view?r=eyJrIjoiNzk3OWUyNzUtYjVkMi00MjJkLTg0YmYtMDEzZTVhZTU3ZDZmIiwidCI6ImNjMTQ5OWQzLWRhYmEtNGI3ZC1iNzRkLTAwNDdhNjk4YmMxYyIsImMiOjR9" 
+    frameborder="0" 
+    allowFullScreen="true">
+  </iframe>
 
 </body>
 </html>
