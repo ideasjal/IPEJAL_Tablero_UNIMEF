@@ -1,13 +1,13 @@
 {
-  "name": "IPEJAL - Instituto de Pensiones del Estado de Jalisco",
-  "short_name": "IPEJAL Tablero",
-  "start_url": "https://ideasjal.github.io/IPEJAL_Tablero_UNIMEF/",
+  "name": "IPEJAL Tablero de Indicadores",
+  "short_name": "IPEJAL",
+  "start_url": "https://deasjal.github.io/",
   "display": "standalone",
-  "background_color": "#EEF2F3",
-  "theme_color": "#7357C1",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/ideasjal/IPEJAL_Tablero_UNIMEF/main/logo-ipejal1.png",
+      "src": "https://raw.githubusercontent.com/deasjal/deasjal.github.io/main/logo-ipejal_st.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
