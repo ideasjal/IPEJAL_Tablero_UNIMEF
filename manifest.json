@@ -1,13 +1,14 @@
 {
   "name": "IPEJAL Tablero de Indicadores",
   "short_name": "IPEJAL",
-  "start_url": "https://deasjal.github.io/",
+  "start_url": "https://ideasjal.github.io/IPEJAL_Tablero_UNIMEF/",
+  "scope": "https://ideasjal.github.io/IPEJAL_Tablero_UNIMEF/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/deasjal/deasjal.github.io/main/logo-ipejal_st.png",
+      "src": "https://raw.githubusercontent.com/ideasjal/IPEJAL_Tablero_UNIMEF/main/logo-ipejal_st.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
