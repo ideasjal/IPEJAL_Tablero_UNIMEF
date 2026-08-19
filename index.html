@@ -5,126 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IPEJAL_Tablero</title>
   
-  <!-- Configuración PWA para móviles (iOS y Android) -->
+  <!-- Configuración para dispositivos móviles -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="IPEJAL">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Iconos usando la URL Absoluta de GitHub Raw -->
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/deasjal/deasjal.github.io/main/logo-ipejal_st.png">
-  <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/deasjal/deasjal.github.io/main/logo-ipejal_st.png">
-  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/deasjal/deasjal.github.io/main/logo-ipejal_st.png">
+  <!-- Iconos de la pestaña y app con la URL REAL de GitHub Raw -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ideasjal/IPEJAL_Tablero_UNIMEF/main/logo-ipejal_st.png">
+  <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/ideasjal/IPEJAL_Tablero_UNIMEF/main/logo-ipejal_st.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/ideasjal/IPEJAL_Tablero_UNIMEF/main/logo-ipejal_st.png">
   
-  <!-- Manifest -->
-  <link rel="manifest" href="manifest.json">
+  <!-- Manifest (Web App) -->
+  <link rel="manifest" href="./manifest.json">
   
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Pantalla de Carga / Splash Screen */
-    #loader-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
-
-    #loader-wrapper img {
-      max-width: 220px;
-      height: auto;
-      margin-bottom: 30px;
-    }
-
-    .progress-bar-container {
-      width: 200px;
-      height: 6px;
-      background-color: #e0e0e0;
-      border-radius: 3px;
-      overflow: hidden;
-    }
-
-    .progress-bar {
-      width: 100%;
-      height: 100%;
-      background-color: #5b3a9c;
-      animation: loading 2.5s ease-in-out infinite;
-      transform-origin: left;
-    }
-
-    @keyframes loading {
-      0% { transform: scaleX(0); }
-      50% { transform: scaleX(0.7); }
-      100% { transform: scaleX(1); }
-    }
-
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-    }
-
-    .fade-out {
-      opacity: 0;
-      visibility: hidden;
-    }
+    /* Tus estilos CSS aquí */
   </style>
 </head>
 <body>
-
-  <!-- Introducción con Logo y Barra de Carga -->
-  <div id="loader-wrapper">
-    <img src="logo-ipejal1.png" alt="Cargando IPEJAL...">
-    <div class="progress-bar-container">
-      <div class="progress-bar"></div>
-    </div>
-  </div>
-
-  <!-- Reporte Power BI -->
-  <iframe 
-    id="pbi-iframe"
-    title="IPEJAL_Tablero" 
-    src="https://app.powerbi.com/view?r=eyJrIjoiNzk3OWUyNzUtYjVkMi00MjJkLTg0YmYtMDEzZTVhZTU3ZDZmIiwidCI6ImNjMTQ5OWQzLWRhYmEtNGI3ZC1iNzRkLTAwNDdhNjk4YmMxYyIsImMiOjR9" 
-    frameborder="0" 
-    allowFullScreen="true">
-  </iframe>
-
-  <script>
-    const loader = document.getElementById('loader-wrapper');
-    const iframe = document.getElementById('pbi-iframe');
-
-    iframe.onload = function() {
-      setTimeout(() => {
-        loader.classList.add('fade-out');
-      }, 1500);
-    };
-
-    setTimeout(() => {
-      if (!loader.classList.contains('fade-out')) {
-        loader.classList.add('fade-out');
-      }
-    }, 4000);
-  </script>
-
+  <!-- Tu estructura HTML aquí -->
 </body>
 </html>
